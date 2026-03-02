@@ -1,11 +1,13 @@
 # app.py
+import os
 
-API_KEY = "1234-ISW-SECRET"
+API_KEY = os.getenv("API_KEY")
+
 
 def sumar(a, b):
     resultado = a + b
-    x = 10
     return resultado
+
 
 def restar(a, b):
     return a - b
